@@ -8,23 +8,23 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import pandas as pd
 
-
 #os.system("module load texlive")
 #os.system("module load python")
 
 toev=27.21138602
 
-ecps = ['UC', 'CRENBL', 'LANL2DZ', 'MWBSTU','MDFSTU','hard-stu-mod','soft-stu-mod','soft-d-inclu']
+#ecps = ['UC', 'CRENBL', 'LANL2DZ', 'MWBSTU','MDFSTU','hard-stu-mod','soft-stu-mod','soft-d-inclu']
+ecps = ['UC', 'CRENBL', 'LANL2DZ', 'MWBSTU','MDFSTU','soft-d-inclu']
 styles = {
 'UC'          :{'label': 'UC',       'color':'#e41a1c','linestyle':'-'},
 'CRENBL'      :{'label': 'CRENBL',   'color':'#377eb8','linestyle':'-','dashes': (3,1,1,2) },
 'LANL2DZ'     :{'label': 'LANL2DZ',  'color':'#ff7f00','linestyle':'--','dashes': (8,5,1,3)},
 'MDFSTU'       :{'label': 'MDFSTU',    'color':'#984ea3','linestyle':'--','dashes': (6,3)     },
 'MWBSTU'      :{'label': 'MWBSTU',   'color':'#DC0174','linestyle':'-','dashes': (3,1,1,2) },
-'hard-stu-mod'       :{'label': 'hard-stu-mod',      'color':'#6600ff','linestyle':'--','dashes': (3,2)      },
+#'hard-stu-mod'       :{'label': 'hard-stu-mod',      'color':'#6600ff','linestyle':'--','dashes': (3,2)      },
 #'smal-se3'     :{'label': 'energy3',      'color':'#006666','linestyle':'--','dashes': (4,3)     },
 #'norm-bfd-0.33'     :{'label': 'Norm-bfd',      'color':'#008000','linestyle':'--','dashes': (6,6)     },
-'soft-stu-mod'      :{'label': 'soft-stu-mod',    'color':'#008000','linestyle':'--','dashes': (4,2,1,2) },
+#'soft-stu-mod'      :{'label': 'soft-stu-mod',    'color':'#008000','linestyle':'--','dashes': (4,2,1,2) },
 #
 'soft-d-inclu'     :{'label': 'soft-d-channel',      'color':'#39e600','linestyle':'-','dashes': (2,3)     },
 }
@@ -81,8 +81,8 @@ def plot():
     ax.set(title='SrO qz Discrepancies')
     plt.legend(loc='best',ncol=2)
     plt.axvline(1.9379387916356698,ls='--',color='gray',linewidth=1.0)
-    plt.savefig('SrO_qz.pdf')
-    plt.savefig('SrO_qz.png')
+    plt.savefig('SrO_qz_1125.pdf')
+    plt.savefig('SrO_qz_1125.png')
     plt.show()
 
 if __name__ == '__main__':

@@ -1,0 +1,21 @@
+
+ GLOBAL ERROR fehler on processor   0                                         
+    0: fehler 1 (0x1).
+    0: fehler 1 (0x1).
+Rank 0 [Thu Nov 14 13:59:17 2019] [c2-0c1s8n0] application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+
+ GLOBAL ERROR fehler on processor   2                                         
+    2: fehler 1 (0x1).
+    2: fehler 1 (0x1).
+Rank 2 [Thu Nov 14 13:59:17 2019] [c2-0c1s8n0] application called MPI_Abort(MPI_COMM_WORLD, 1) - process 2
+
+ GLOBAL ERROR fehler on processor   1                                         
+    1: fehler 1 (0x1).
+    1: fehler 1 (0x1).
+Rank 1 [Thu Nov 14 13:59:17 2019] [c2-0c1s8n0] application called MPI_Abort(MPI_COMM_WORLD, 1) - process 1
+srun: error: nid00480: task 0: Aborted
+srun: Terminating job step 25819766.0
+srun: error: nid00480: tasks 1-2: Aborted
+slurmstepd: error: *** STEP 25819766.0 ON nid00480 CANCELLED AT 2019-11-14T13:59:21 ***
+srun: error: nid00480: task 3: Terminated
+srun: Force Terminated job step 25819766.0
